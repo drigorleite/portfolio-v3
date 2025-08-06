@@ -1,0 +1,215 @@
+/* =========================================================
+   RESUME.CSS – Premium Overhaul | Rodrigo Leite 2025-07-03
+   ---------------------------------------------------------
+   • Clean, scannable layout for recruiters.
+   • Sophisticated timeline for education history.
+   • Professional, print-friendly styles via @media print.
+   • Aligned with the Apple Dark Mode design system.
+   ======================================================= */
+
+/* ---------- 1. PAGE LAYOUT ---------- */
+.resume-page .container {
+    max-width: 60rem; /* A slightly narrower container for better readability */
+}
+
+.resume-header {
+    text-align: center;
+    padding-block: clamp(4rem, 8vw, 6rem);
+    border-bottom: 1px solid var(--border);
+}
+
+.resume-header h1 {
+    font-family: var(--font-display);
+    font-size: var(--fs-900);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.resume-header .lead {
+    color: var(--text-secondary);
+    max-width: 60ch;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
+.resume-section {
+    padding-block: clamp(3rem, 6vw, 5rem);
+}
+
+.resume-section:not(:last-of-type) {
+    border-bottom: 1px solid var(--border);
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-size: var(--fs-700);
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+/* ---------- 2. SKILLS GRID ---------- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category h3 {
+    font-size: var(--fs-500);
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: .75rem;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: .5rem;
+    color: var(--text-secondary);
+}
+
+.skill-category li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.25rem;
+    top: -0.2rem;
+}
+
+/* ---------- 3. EDUCATION TIMELINE ---------- */
+.timeline {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin-left: .5rem;
+    max-width: 500px;
+}
+
+/* The vertical connecting line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: .3rem;
+    top: .5rem;
+    bottom: .5rem;
+    width: 2px;
+    background: var(--border);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.timeline-item:not(:last-child) {
+    padding-bottom: 3rem;
+}
+
+/* The circular marker on the line */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: .3rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--bg-primary);
+    border: 3px solid var(--primary);
+}
+
+.timeline-date {
+    font-size: var(--fs-300);
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-bottom: .25rem;
+}
+
+.timeline-title {
+    font-size: var(--fs-600);
+    margin-bottom: .25rem;
+}
+
+.timeline-subtitle {
+    color: var(--text-secondary);
+}
+
+/* ---------- 4. CERTIFICATIONS LIST ---------- */
+.certifications-list {
+    list-style: none;
+    padding: 0;
+}
+
+.certifications-list li {
+    font-size: var(--fs-400);
+    color: var(--text-secondary);
+    position: relative;
+    padding-left: 1.75rem;
+}
+
+.certifications-list li:not(:last-child) {
+    margin-bottom: .75rem;
+}
+
+.certifications-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* ---------- 5. PRINT-FRIENDLY STYLES ---------- */
+@media print {
+    /* Reset everything for a clean slate */
+    body {
+        background-color: #fff !important;
+        color: #000 !important;
+        font-size: 10pt;
+    }
+    
+    /* Hide non-essential elements */
+    .navbar,
+    .footer,
+    .custom-cursor,
+    .resume-header .cta-principal {
+        display: none !important;
+    }
+
+    /* Adjust page layout for printing */
+    .resume-page .container {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .resume-header {
+        padding-block: 0;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 2rem;
+    }
+    
+    .resume-section {
+        padding-block: 1.5rem 0;
+        border-bottom: 1px solid #ccc;
+        break-inside: avoid; /* Prevents sections from breaking across pages */
+    }
+
+    .section-title {
+        font-size: 14pt;
+        margin-bottom: 1.5rem;
+    }
+    
+    h3 { font-size: 12pt; }
+
+    a { color: #000; text-decoration: none; }
+}

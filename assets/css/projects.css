@@ -1,0 +1,195 @@
+/* =========================================================
+   PROJECTS.CSS – Premium Overhaul | Rodrigo Leite 2025-07-03
+   ---------------------------------------------------------
+   • Features a full-bleed "case study" section for the main project.
+   • A clean, responsive grid for secondary projects.
+   • Sophisticated card design with hover interactions.
+   • Aligned with the Apple Dark Mode design system.
+   ======================================================= */
+
+/* ---------- 1. PROJECTS HERO SECTION ---------- */
+.projects-hero {
+    text-align: center;
+    padding: clamp(5rem, 10vw, 8rem) 1.5rem;
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--border);
+}
+
+.hero-title {
+    font-family: var(--font-display);
+    font-size: var(--fs-900);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: var(--fs-500);
+    color: var(--text-secondary);
+    max-width: 65ch;
+    margin-inline: auto;
+}
+
+/* ---------- 2. FEATURED CASE STUDY SECTION ---------- */
+.featured-case-study {
+    padding-block: clamp(5rem, 10vw, 8rem);
+}
+
+.case-study-card {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: center;
+}
+
+.case-study-image-wrapper {
+    border-radius: var(--radius);
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+}
+
+.case-study-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.case-study-card:hover .case-study-image-wrapper img {
+    transform: scale(1.05);
+}
+
+.case-study-tag {
+    display: inline-block;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: var(--fs-300);
+}
+
+.case-study-title {
+    font-family: var(--font-display);
+    font-size: var(--fs-700);
+    margin-bottom: 1.25rem;
+}
+
+.case-study-description {
+    color: var(--text-secondary);
+    font-size: var(--fs-400);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.case-study-details h4 {
+    font-family: var(--font-display);
+    font-size: var(--fs-400);
+    margin-bottom: .75rem;
+}
+
+.case-study-details ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.case-study-details li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.case-study-details li::before {
+    content: '🎯';
+    position: absolute;
+    left: 0;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-bottom: 2rem;
+}
+
+.project-tech span {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    padding: .3rem .75rem;
+    border-radius: 999px;
+    font-size: var(--fs-300);
+    font-weight: 500;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* ---------- 3. OTHER PROJECTS GRID ---------- */
+.projects-grid-section {
+    padding-block: clamp(5rem, 10vw, 8rem);
+    background: var(--bg-alt);
+    border-top: 1px solid var(--border);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.grid-project-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition-med);
+}
+
+.grid-project-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+}
+
+.card-image-container {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content h3 {
+    font-family: var(--font-display);
+    margin-bottom: .5rem;
+    font-size: var(--fs-600);
+}
+
+.card-content p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+/* ---------- 4. RESPONSIVE ---------- */
+@media (max-width: 900px) {
+    .case-study-card {
+        grid-template-columns: 1fr;
+    }
+}

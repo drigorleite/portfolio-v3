@@ -1,0 +1,269 @@
+/* =========================================================
+   HOME.CSS  –  Premium Overhaul | Rodrigo Leite 2025-07-03
+   ---------------------------------------------------------
+   • Hero with animated aurora background and parallax.
+   • Sophisticated, responsive grid for services with hover.
+   • Interactive project preview with overlay effects.
+   • Clean, modern bio strip and footer styling.
+   ======================================================= */
+
+/* ---------- 1. HERO SECTION ---------- */
+.hero {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 1.5rem;
+    overflow: hidden;
+}
+
+/* Animated Aurora Background */
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 30%, hsla(var(--primary-hue), 100%, 50%, 0.15), transparent 50%),
+                radial-gradient(circle at 80% 70%, hsla(var(--accent-hue), 100%, 50%, 0.15), transparent 50%);
+    animation: aurora-flow 25s linear infinite;
+    z-index: 0;
+}
+
+@keyframes aurora-flow {
+    0%   { transform: rotate(0deg) scale(1.5); }
+    50%  { transform: rotate(180deg) scale(1.8); }
+    100% { transform: rotate(360deg) scale(1.5); }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 55rem;
+    margin-inline: auto;
+    animation: fade-in-up .8s ease forwards;
+}
+
+@keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-title {
+    font-family: var(--font-display);
+    font-size: var(--fs-900);
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+    color: var(--text-highlight);
+}
+
+.hero-subtitle {
+    font-size: var(--fs-500);
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    max-width: 60ch;
+    margin-inline: auto;
+}
+
+.hero-cta-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* ---------- 2. SERVICES SECTION ---------- */
+.services {
+    padding-block: clamp(5rem, 10vw, 8rem);
+    background: var(--bg-alt);
+    border-block: 1px solid var(--border);
+}
+
+.section-title {
+    text-align: center;
+    font-family: var(--font-display);
+    font-size: var(--fs-700);
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-highlight);
+    font-size: var(--fs-400);
+    max-width: 50ch;
+    margin-inline: auto;
+    margin-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2.5rem 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform .3s ease, border-color .3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+}
+
+.service-card.featured {
+    border-color: var(--primary);
+    transform: scale(1.03);
+}
+
+.featured-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: -45px;
+    background: var(--primary);
+    color: var(--bg);
+    padding: .25rem 3rem;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transform: rotate(45deg);
+}
+
+.service-title {
+    font-family: var(--font-display);
+    font-size: var(--fs-600);
+    margin-bottom: .5rem;
+}
+
+.service-price {
+    font-size: var(--fs-500);
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.service-description {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    min-height: 80px;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.service-features li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.service-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--text-highlight);
+}
+
+/* ---------- 3. FEATURED PROJECTS PREVIEW ---------- */
+.featured-projects {
+    padding-block: clamp(5rem, 10vw, 8rem);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.project-card {
+    position: relative;
+    border-radius: var(--radius);
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    display: block;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .6s ease, filter .6s ease;
+}
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .4s ease, transform .4s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-overlay h3 {
+    font-family: var(--font-display);
+    font-size: var(--fs-600);
+    color: white;
+}
+
+.project-overlay p {
+    font-size: var(--fs-400);
+    color: rgba(255,255,255,0.8);
+    margin: 0;
+}
+
+.view-all-projects {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* ---------- 4. BIO STRIP ---------- */
+.bio-strip {
+    background: var(--bg-alt);
+    padding: 2.5rem 1.5rem;
+    border-block: 1px solid var(--border);
+}
+
+.bio-strip-content {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: var(--fs-400);
+}
+
+.bio-strip-content strong {
+    color: var(--text-heading);
+}
+
+/* ---------- 5. RESPONSIVE ADJUSTMENTS ---------- */
+@media (max-width: 900px) {
+    .service-card.featured {
+        transform: none; /* remove scale on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
