@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" class="dark-theme"> <!-- Default to dark theme -->
+<html lang="en" class="dark-theme">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rodrigo Leite | Web Developer in Michigan | Fast & Clean Websites</title>
+  <title>Rodrigo Leite | Web Developer — Fast, Beautiful Websites That Convert</title>
 
   <meta name="description"
-    content="I build clean, responsive websites and landing pages that turn visitors into clients. Delivered in 7 days. Based in Michigan, serving globally. Free quote.">
-
+    content="I build fast, modern websites and web apps that turn visitors into paying clients. Delivered in 72 hours. Based in Michigan. Free quote — no commitment.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <link rel="canonical" href="https://rodrigoleitedev.com/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Rodrigo Leite | Fast, Clean Websites that Convert" />
-  <meta property="og:description"
-    content="Web developer based in Michigan building modern, high-conversion websites with custom design and fast delivery." />
+  <meta property="og:title" content="Rodrigo Leite | Websites That Convert" />
+  <meta property="og:description" content="Fast, modern websites and web apps delivered in 72 hours. Free quote." />
   <meta property="og:url" content="https://rodrigoleitedev.com/" />
   <meta property="og:image" content="https://rodrigoleitedev.com/assets/og/og-home.jpg" />
   <meta property="og:site_name" content="Rodrigo Leite" />
@@ -24,12 +22,10 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Rodrigo Leite | Web Developer in Michigan" />
-  <meta name="twitter:description"
-    content="Clean websites & landing pages delivered in 7 days. English & Portuguese. Free quote." />
+  <meta name="twitter:description" content="Clean websites & web apps delivered in 72 hours. Free quote." />
   <meta name="twitter:image" content="https://rodrigoleitedev.com/assets/og/og-home.jpg" />
 
-  <meta name="theme-color" content="#0b0b0f" />
-  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#0a0a0f" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/base.css" />
@@ -38,222 +34,393 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Sora:wght@600;700&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
 </head>
 
-
 <body>
-    <!-- Custom Cursor Div -->
-    <div class="custom-cursor"></div>
 
-    <!-- Header -->
-    <header class="navbar">
-        <div class="logo">
-            <a href="index.html" aria-label="Rodrigo Leite - Home">
-                <!-- AVISO: Placeholder for your logo -->
-                <img src="assets/images/whiteLogo1.png" alt="RL Logo">
-            </a>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html" aria-label="Rodrigo Leite — Home">
+        <img src="assets/images/whiteLogo1.png" alt="RL Logo">
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-links" id="nav-links-container">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html" class="nav-cta">Get a Free Quote →</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle Menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </header>
+
+  <main class="homepage">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-content">
+
+        <div class="hero-eyebrow">
+          Available for new projects
         </div>
-        <nav>
-            <ul class="nav-links" id="nav-links-container">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html" class="nav-cta">Get a Free Quote</a></li>
+
+        <h1 class="hero-title">
+          Your business deserves a website<br>
+          that actually <span class="highlight">wins clients.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          I build fast, modern, and conversion-focused websites for small businesses and entrepreneurs.
+          Clean design, real results — delivered in as little as 72 hours. Starting at $499.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="contact.html" class="cta-principal">Get a Free Quote →</a>
+          <a href="projects.html" class="btn-secondary">See My Work</a>
+        </div>
+
+        <div class="hero-social-proof">
+          <div class="proof-item">
+            <span class="proof-icon">✓</span>
+            <span>Delivered in 72h</span>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <span class="proof-icon">✓</span>
+            <span>Mobile-first design</span>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <span class="proof-icon">✓</span>
+            <span>English &amp; Portuguese</span>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <span class="proof-icon">✓</span>
+            <span>Free quote, no commitment</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== TRUST BAR ===== -->
+    <div class="trust-bar">
+      <div class="container">
+        <div class="trust-bar-inner">
+          <span class="trust-label">Built with</span>
+          <div class="trust-techs">
+            <span class="trust-tech">React</span>
+            <span class="trust-tech">TypeScript</span>
+            <span class="trust-tech">Node.js</span>
+            <span class="trust-tech">HTML / CSS</span>
+            <span class="trust-tech">JavaScript</span>
+            <span class="trust-tech">MySQL</span>
+            <span class="trust-tech">Stripe</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== PROBLEM / HOOK ===== -->
+    <section class="problem-section">
+      <div class="container">
+        <span class="section-eyebrow">Sound familiar?</span>
+        <h2 class="section-title">Most small businesses are losing clients online — without even knowing it.</h2>
+        <p class="section-subtitle">
+          A slow, outdated, or non-existent website is silently costing you money every day.
+          Here's what your competitors are doing better right now:
+        </p>
+        <div class="pain-points">
+          <div class="pain-card">
+            <span class="pain-icon">🐢</span>
+            <h4>Slow loading speed</h4>
+            <p>53% of visitors leave if a site takes more than 3 seconds to load. Google penalizes slow sites too.</p>
+          </div>
+          <div class="pain-card">
+            <span class="pain-icon">📱</span>
+            <h4>Not mobile-friendly</h4>
+            <p>Over 60% of web traffic is mobile. If your site breaks on phones, you're losing more than half your leads.</p>
+          </div>
+          <div class="pain-card">
+            <span class="pain-icon">🎨</span>
+            <h4>Outdated design</h4>
+            <p>Visitors judge your credibility in under 0.05 seconds. An old-looking site signals an old-school business.</p>
+          </div>
+          <div class="pain-card">
+            <span class="pain-icon">📞</span>
+            <h4>No clear call-to-action</h4>
+            <p>If visitors don't know what to do next, they leave. A strategic layout turns browsers into buyers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES / PRICING ===== -->
+    <section class="services" id="services">
+      <div class="container">
+        <span class="section-eyebrow" style="display:block; text-align:center;">What I offer</span>
+        <h2 class="section-title">Simple, transparent pricing.<br>No surprises.</h2>
+        <p class="section-subtitle">
+          Every package includes custom design, mobile-first development, and SEO basics.
+          You own 100% of the code.
+        </p>
+
+        <div class="services-grid">
+
+          <!-- Landing Page -->
+          <div class="service-card">
+            <span class="service-icon">🚀</span>
+            <h3 class="service-title">Landing Page</h3>
+            <p class="service-price">$499 <span>/ one-time</span></p>
+            <p class="service-description">
+              A high-converting single page — perfect for promotions, lead generation, or launching a new service fast.
+            </p>
+            <ul class="service-features">
+              <li>Delivered in ≤ 72 hours</li>
+              <li>Custom design, mobile-first</li>
+              <li>WhatsApp &amp; contact form</li>
+              <li>Basic SEO + fast load</li>
+              <li>You own the code</li>
             </ul>
-        </nav>
-        <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle Menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-    </header>
+          </div>
 
-    <main class="homepage">
+          <!-- Business Website — Featured -->
+          <div class="service-card featured">
+            <span class="featured-badge">Most Popular</span>
+            <span class="service-icon">🏢</span>
+            <h3 class="service-title">Business Website</h3>
+            <p class="service-price">$999 <span>/ one-time</span></p>
+            <p class="service-description">
+              A complete multi-page site for small businesses ready to establish a serious online presence and attract more clients.
+            </p>
+            <ul class="service-features">
+              <li>Up to 7 pages (Home, About, Services…)</li>
+              <li>Custom design + optional CMS</li>
+              <li>Google Maps, WhatsApp, social links</li>
+              <li>SEO + speed optimization</li>
+              <li>1 month of free support</li>
+            </ul>
+          </div>
 
-        <!-- HERO SECTION -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">Need a website? Contact me. Delivered in 72 Hours.</h1>
+          <!-- Web App / SaaS -->
+          <div class="service-card">
+            <span class="service-icon">⚙️</span>
+            <h3 class="service-title">Web App / SaaS</h3>
+            <p class="service-price">Custom <span>/ quote</span></p>
+            <p class="service-description">
+              Full-stack web applications with databases, user authentication, dashboards, and custom business logic.
+            </p>
+            <ul class="service-features">
+              <li>React + Node.js + TypeScript</li>
+              <li>Database design &amp; API</li>
+              <li>User auth &amp; roles</li>
+              <li>Stripe / payment integration</li>
+              <li>Scalable architecture</li>
+            </ul>
+          </div>
 
-                <p class="hero-subtitle">
-                    From a simple landing page to a full site, I build fast, modern, and objective solutions that solve
-                    real problems for your business. Starting at just $499.
-                </p>
-                <div class="hero-cta-group">
-                    <a href="contact.html" class="cta-principal">Get a Free Quote</a>
-                    <a href="projects.html" class="btn-secondary">See My Work</a>
-                </div>
-            </div>
-        </section>
+          <!-- Maintenance -->
+          <div class="service-card">
+            <span class="service-icon">🛡️</span>
+            <h3 class="service-title">Maintenance &amp; Support</h3>
+            <p class="service-price">Monthly <span>/ plans available</span></p>
+            <p class="service-description">
+              Keep your site fast, secure, and up to date without lifting a finger. Peace of mind included.
+            </p>
+            <ul class="service-features">
+              <li>Updates &amp; backups</li>
+              <li>Security monitoring</li>
+              <li>Content edits</li>
+              <li>Performance checks</li>
+              <li>Priority support</li>
+            </ul>
+          </div>
 
-        <!-- SERVICES SECTION -->
-        <section class="services">
-            <div class="container">
-                <h2 class="section-title">Web Services That Deliver Results</h2>
-                <p class="section-subtitle">Packages designed for real-world needs — clear, fast, and
-                    conversion-focused. Design included.</p>
-
-                <div class="services-grid">
-
-                    <!-- Service 1: Landing Page -->
-                    <div class="service-card">
-                        <h3 class="service-title">Landing Page</h3>
-                        <p class="service-price">From $499</p>
-                        <p class="service-description">
-                            A high-converting one-page site — ideal for promotions, service highlights, or digital
-                            campaigns.
-                        </p>
-                        <ul class="service-features">
-                            <li>Delivered in ≤ 72 hours</li>
-                            <li>Mobile-first + custom design</li>
-                            <li>WhatsApp & contact form integration</li>
-                            <li>Basic SEO setup</li>
-                            <li>No database required</li>
-                        </ul>
-                    </div>
-
-                    <!-- Service 2: Multi-Page Website -->
-                    <div class="service-card featured">
-                        <span class="featured-badge">Most Popular</span>
-                        <h3 class="service-title">Business Website</h3>
-                        <p class="service-price">From $999</p>
-                        <p class="service-description">
-                            A complete website with up to 7 pages — perfect for small businesses looking to establish a
-                            solid online presence.
-                        </p>
-                        <ul class="service-features">
-                            <li>Home, About, Services, Contact, etc.</li>
-                            <li>Custom design + CMS (optional)</li>
-                            <li>Google Maps, WhatsApp & social links</li>
-                            <li>Basic SEO + speed optimization</li>
-                            <li>No database required</li>
-                        </ul>
-                    </div>
-
-                    <!-- Service 3: eCommerce Website -->
-                    <div class="service-card">
-                        <h3 class="service-title">eCommerce Website</h3>
-                        <p class="service-price">Custom Quote</p>
-                        <p class="service-description">
-                            Sell your products online with a full-featured store — built to convert and scale with your
-                            business.
-                        </p>
-                        <ul class="service-features">
-                            <li>Product catalog + categories</li>
-                            <li>Shopping cart & checkout flow</li>
-                            <li>Stripe, PayPal, or MercadoPago integration</li>
-                            <li>Inventory system (CMS or dashboard)</li>
-                            <li>Database + security setup</li>
-                        </ul>
-                    </div>
-
-                    <!-- Service 4: Ongoing Maintenance -->
-                    <div class="service-card">
-                        <h3 class="service-title">Maintenance & Support</h3>
-                        <p class="service-price">Monthly plans available</p>
-                        <p class="service-description">
-                            Keep your site secure, fast, and up to date. Perfect for clients who prefer peace of mind
-                            and professional upkeep.
-                        </p>
-                        <ul class="service-features">
-                            <li>Updates & backups</li>
-                            <li>Security monitoring</li>
-                            <li>Small content edits</li>
-                            <li>Performance checks</li>
-                            <li>Priority support</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PORTFOLIO PREVIEW -->
-        <section class="featured-projects">
-            <div class="container">
-                <h2 class="section-title">From Idea to Impact</h2>
-                <div class="project-grid">
-                    <a href="https://timecash.netlify.app" target="_blank" class="project-card">
-                        <img src="assets/images/project-timecash.png" alt="Screenshot of the TimeCash project"
-                            class="project-image">
-                        <div class="project-overlay">
-                            <h3>Timecash</h3>
-                            <p>Cut admin time by 85% with this payment management tool.</p>
-                        </div>
-                    </a>
-                    <a href="projects.html#racquetfinder" class="project-card">
-                        <img src="assets/images/project-racquetfinder.png"
-                            alt="Screenshot of the Racquet Finder project" class="project-image">
-                        <div class="project-overlay">
-                            <h3>Racquet Finder</h3>
-                            <p>An interactive tool for tennis players to find their ideal gear.</p>
-                        </div>
-                    </a>
-                    <a href="projects.html#racquetfinder" class="project-card">
-                        <img src="assets/images/project-ranking.png" alt="Screenshot of the Racquet Finder project"
-                            class="project-image">
-                        <div class="project-overlay">
-                            <h3>Ranking WebApp Project</h3>
-                            <p>There is a database where the admin can add, edit and delete matches; Admin can add and
-                                delete players; and this is just a start of a big project.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="view-all-projects">
-                    <a href="projects.html" class="btn-secondary">Explore All Projects</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- BIO STRIP -->
-        <section class="bio-strip">
-            <div class="container bio-strip-content">
-                <p>
-                    <strong>Ex-law student turned developer.</strong> Bilingual (PT/EN) and based in Michigan, I bring
-                    critical thinking and a global perspective to every project.
-                </p>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <h3>Rodrigo Leite</h3>
-                    <p>Digital craftsman building clean, effective websites.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Links</h4>
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-socials">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="https://github.com/drigorleite" target="_blank">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/drigorleite/" target="_blank">LinkedIn</a></li>
-                        <li><a href="https://www.instagram.com/drigorleite/" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/rrleite1/" target="_blank">Facebook</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Rodrigo Ribeiro Leite. All Rights Reserved.</p>
-            </div>
         </div>
-    </footer>
 
-    <script src="/assets/js/script.js"></script>
+        <div class="services-cta">
+          <a href="contact.html" class="cta-principal">Start Your Project →</a>
+          <p>Not sure which package fits? Send me a message and I'll help you decide — for free.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="how-it-works">
+      <div class="container">
+        <span class="section-eyebrow" style="display:block; text-align:center;">The process</span>
+        <h2 class="section-title">From idea to live site in 4 steps.</h2>
+        <p class="section-subtitle">No back-and-forth for weeks. No technical jargon. Just results.</p>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Free Discovery Call</h3>
+            <p>We talk about your business, goals, and what you need. No commitment, no pressure.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>Proposal &amp; Quote</h3>
+            <p>I send a clear proposal with scope, timeline, and price. You approve and we start.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>Design &amp; Build</h3>
+            <p>I design and develop your site with daily updates. You give feedback along the way.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <h3>Launch &amp; Support</h3>
+            <p>Your site goes live. I handle deployment and stay available for any tweaks you need.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED PROJECTS ===== -->
+    <section class="featured-projects">
+      <div class="container">
+        <span class="section-eyebrow" style="display:block; text-align:center;">Selected work</span>
+        <h2 class="section-title">Real projects. Real results.</h2>
+        <p class="section-subtitle">
+          From SaaS platforms to business websites — here's a sample of what I've built.
+        </p>
+
+        <div class="project-grid">
+          <a href="projects.html#flipwise" class="project-card">
+            <img src="assets/images/project-flipwise.png" alt="Screenshot of the FlipWise SaaS application" class="project-image">
+            <div class="project-overlay">
+              <span class="project-tag">SaaS · Full-Stack</span>
+              <h3>FlipWise</h3>
+              <p>Full-stack SaaS for real estate renovation management. Built with React, Node.js &amp; TypeScript.</p>
+            </div>
+          </a>
+          <a href="https://timecash.netlify.app" target="_blank" class="project-card">
+            <img src="assets/images/project-timecash.png" alt="Screenshot of the TimeCash project" class="project-image">
+            <div class="project-overlay">
+              <span class="project-tag">Web App</span>
+              <h3>TimeCash</h3>
+              <p>Cut payroll admin time by 85% with this payment management tool.</p>
+            </div>
+          </a>
+          <a href="projects.html#racquetfinder" class="project-card">
+            <img src="assets/images/project-racquetfinder.png" alt="Screenshot of the Racquet Finder project" class="project-image">
+            <div class="project-overlay">
+              <span class="project-tag">Web App</span>
+              <h3>Raquete Search</h3>
+              <p>Interactive platform helping tennis players find their ideal racquet.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="view-all-projects">
+          <a href="projects.html" class="btn-secondary">Explore All Projects →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESULTS / STATS ===== -->
+    <section class="results-section">
+      <div class="container">
+        <span class="section-eyebrow" style="display:block; text-align:center;">By the numbers</span>
+        <h2 class="section-title">What you can expect.</h2>
+        <p class="section-subtitle">
+          Every site I build is engineered for performance, usability, and results.
+        </p>
+
+        <div class="results-grid">
+          <div class="result-card">
+            <div class="result-number">72h</div>
+            <p class="result-label">Average delivery time for landing pages</p>
+          </div>
+          <div class="result-card">
+            <div class="result-number">100%</div>
+            <p class="result-label">Mobile-responsive across all devices</p>
+          </div>
+          <div class="result-card">
+            <div class="result-number">90+</div>
+            <p class="result-label">Google PageSpeed score target on every project</p>
+          </div>
+          <div class="result-card">
+            <div class="result-number">2x</div>
+            <p class="result-label">Languages — English &amp; Portuguese, no barriers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="final-cta">
+      <div class="container">
+        <div class="final-cta-content">
+          <h2>Ready to get a website that actually works for your business?</h2>
+          <p>
+            Let's talk about your project. The first consultation is completely free —
+            no pressure, no commitment, just a conversation about what you need.
+          </p>
+          <div class="final-cta-group">
+            <a href="contact.html" class="cta-principal">Get a Free Quote →</a>
+            <a href="projects.html" class="btn-secondary">See My Work</a>
+          </div>
+          <p class="final-cta-note">⚡ Typical response time: under 24 hours.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="assets/images/whiteLogo1.png" alt="RL Logo" class="footer-logo">
+          <p>Building clean, fast websites that help businesses grow online.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Landing Page — $499</a></li>
+            <li><a href="#services">Business Website — $999</a></li>
+            <li><a href="#services">Web App / SaaS</a></li>
+            <li><a href="#services">Maintenance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://github.com/drigorleite" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/drigorleite/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/drigorleite/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/rrleite1/" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Rodrigo Ribeiro Leite. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 
-
 </html>
-
