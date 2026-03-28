@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects | Rodrigo Leite</title>
     <meta name="description"
-        content="Explore selected web projects by Rodrigo Leite — including web apps, landing pages, and business tools. Built with performance and clarity.">
+        content="Explore selected web projects by Rodrigo Leite — including SaaS platforms, web apps, landing pages, and business tools. Built with performance and clarity.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://rodrigoleitedev.com/projects.html" />
@@ -24,7 +24,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Rodrigo Leite | Portfolio of Web Projects" />
     <meta name="twitter:description"
-        content="Browse Rodrigo Leite's portfolio — web apps, landing pages, and business tools that solve real problems." />
+        content="Browse Rodrigo Leite's portfolio — SaaS platforms, web apps, landing pages, and business tools that solve real problems." />
     <meta name="twitter:image" content="https://rodrigoleitedev.com/assets/og/og-home.jpg" />
 
     <!-- Theme -->
@@ -68,16 +68,18 @@
 
     <main class="projects-page">
 
+        <!-- PAGE HERO -->
         <section class="projects-hero">
             <div class="container">
                 <span class="hero-badge">Portfolio</span>
                 <h1 class="hero-title">Selected Works</h1>
                 <p class="hero-subtitle">I build with purpose. Each project below is a story of a problem solved through
                     clean code, thoughtful design, and a relentless focus on the end-user.</p>
-                
+
                 <!-- Project Filters -->
                 <div class="project-filters">
                     <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="saas">SaaS</button>
                     <button class="filter-btn" data-filter="webapp">Web Apps</button>
                     <button class="filter-btn" data-filter="landing">Landing Pages</button>
                     <button class="filter-btn" data-filter="tool">Tools & Utilities</button>
@@ -85,67 +87,310 @@
             </div>
         </section>
 
-        <!-- FEATURED CASE STUDY -->
-        <section class="featured-case-study">
+        <!-- =============================================
+             FLIPWISE — CENTRAL HERO FEATURE PROJECT
+             ============================================= -->
+        <section class="flipwise-hero-section" id="flipwise" data-category="saas">
+            <div class="flipwise-bg-glow"></div>
             <div class="container">
-                <article class="case-study-card" id="cleanquote" data-category="webapp">
-                    <div class="case-study-image-wrapper">
-                        <img src="assets/images/project-cleanquote.png"
-                            alt="CleanQuote Pro - Professional quotation system interface">
+
+                <!-- Badge + Label -->
+                <div class="flipwise-label-row">
+                    <span class="flipwise-badge">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        Flagship Project
+                    </span>
+                    <span class="flipwise-type-tag">SaaS Platform</span>
+                </div>
+
+                <!-- Main Headline -->
+                <div class="flipwise-headline-block">
+                    <h2 class="flipwise-title">
+                        <span class="flipwise-logo-text">FlipWise</span>
+                        <span class="flipwise-subtitle-line">Renovation &amp; Flipping Management</span>
+                    </h2>
+                    <p class="flipwise-tagline">"Manage your flips like a pro."</p>
+                    <p class="flipwise-description">
+                        FlipWise is a full-stack SaaS platform built for real estate investors who are tired of
+                        spreadsheets. It centralizes every dollar, every hour, and every receipt across all active
+                        properties — from the first nail to closing day. I designed, developed, and launched this
+                        product end-to-end, including AI-powered receipt scanning, team collaboration tools,
+                        financial reporting, and a mobile-ready PWA experience.
+                    </p>
+                </div>
+
+                <!-- Live Stats Bar -->
+                <div class="flipwise-stats-bar">
+                    <div class="fw-stat">
+                        <span class="fw-stat-number">11</span>
+                        <span class="fw-stat-label">Active Users</span>
                     </div>
-                    <div class="case-study-content">
-                        <span class="case-study-tag">Featured Project</span>
-                        <h2 class="case-study-title">CleanQuote Pro</h2>
-                        <p class="case-study-description">
-                            A professional quotation system designed for cleaning businesses to create accurate quotes, 
-                            manage clients, and streamline their sales process. Built with a focus on productivity and 
-                            user experience, featuring quick templates, automatic calculations, and a clean multi-step wizard.
-                        </p>
-                        <div class="case-study-details">
-                            <h4>Key Features:</h4>
-                            <ul>
-                                <li><strong>Quick Templates:</strong> Pre-built service templates for bathrooms, kitchens, bedrooms, and more.</li>
-                                <li><strong>Automatic Calculations:</strong> Real-time cost calculation based on time estimates and hourly rates.</li>
-                                <li><strong>Service Levels:</strong> Support for Light, Standard, and Deep Cleaning with automatic multipliers.</li>
-                                <li><strong>Professional Output:</strong> Generate clean, professional quotes ready to send to clients.</li>
-                                <li><strong>Dark/Light Mode:</strong> Theme toggle for user preference.</li>
-                            </ul>
-                            <h4>Impact:</h4>
-                            <p>Reduces quote creation time from 15+ minutes to under 3 minutes. Helps small cleaning businesses 
-                            appear more professional and close more deals with accurate, consistent pricing.</p>
+                    <div class="fw-stat-divider"></div>
+                    <div class="fw-stat">
+                        <span class="fw-stat-number">193</span>
+                        <span class="fw-stat-label">Expenses Tracked</span>
+                    </div>
+                    <div class="fw-stat-divider"></div>
+                    <div class="fw-stat">
+                        <span class="fw-stat-number">$99K+</span>
+                        <span class="fw-stat-label">Transactions Managed</span>
+                    </div>
+                    <div class="fw-stat-divider"></div>
+                    <div class="fw-stat">
+                        <span class="fw-stat-number">&lt;2min</span>
+                        <span class="fw-stat-label">AI Receipt Processing</span>
+                    </div>
+                </div>
+
+                <!-- App Preview + Features Split -->
+                <div class="flipwise-content-split">
+
+                    <!-- Left: App Screenshot -->
+                    <div class="flipwise-preview-col">
+                        <div class="flipwise-preview-frame">
+                            <div class="preview-browser-bar">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="preview-url">flipwiseapp.com</span>
+                            </div>
+                            <img src="assets/images/project-flipwise.png" alt="FlipWise App Interface"
+                                class="flipwise-preview-img" />
                         </div>
-                        <div class="project-tech">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                            <span>SaaS</span>
-                            <span>Business Tool</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://clean-quote-pro.netlify.app" target="_blank" class="cta-principal">Live Demo</a>
-                            <a href="https://github.com/drigorleite" target="_blank" class="btn-secondary">View Code</a>
+                        <div class="flipwise-preview-cta">
+                            <a href="https://flipwiseapp.com" target="_blank" rel="noopener" class="cta-principal flipwise-cta-live">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                Visit FlipWise
+                            </a>
+                            <a href="https://github.com/drigorleite" target="_blank" rel="noopener" class="btn-secondary">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                View Code
+                            </a>
                         </div>
                     </div>
-                </article>
+
+                    <!-- Right: Features Grid -->
+                    <div class="flipwise-features-col">
+                        <h3 class="flipwise-features-heading">Core Features</h3>
+                        <div class="flipwise-features-grid">
+
+                            <div class="fw-feature-card">
+                                <div class="fw-feature-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                                </div>
+                                <div>
+                                    <h4>Multi-Property Portfolio</h4>
+                                    <p>Track multiple flips simultaneously with real-time cost tracking across your entire pipeline at a glance.</p>
+                                </div>
+                            </div>
+
+                            <div class="fw-feature-card fw-feature-highlight">
+                                <div class="fw-feature-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 6v6l4 2"/></svg>
+                                </div>
+                                <div>
+                                    <h4>AI Receipt Scanning</h4>
+                                    <p>Upload any photo or PDF receipt. AI automatically extracts vendor, amount, and category — processed in under 2 minutes.</p>
+                                </div>
+                            </div>
+
+                            <div class="fw-feature-card">
+                                <div class="fw-feature-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                </div>
+                                <div>
+                                    <h4>Team Collaboration</h4>
+                                    <p>Invite workers via email. They log hours and submit expenses — you approve with one click. Full audit trail maintained.</p>
+                                </div>
+                            </div>
+
+                            <div class="fw-feature-card">
+                                <div class="fw-feature-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                                </div>
+                                <div>
+                                    <h4>Financial Reports</h4>
+                                    <p>Breakdown by category, labor vs materials, estimated profit per property. Export to CSV anytime for tax prep.</p>
+                                </div>
+                            </div>
+
+                            <div class="fw-feature-card">
+                                <div class="fw-feature-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                </div>
+                                <div>
+                                    <h4>Timesheet Approval</h4>
+                                    <p>Workers log hours with category and hourly rate. You review and approve — every entry is tracked with a full audit trail.</p>
+                                </div>
+                            </div>
+
+                            <div class="fw-feature-card">
+                                <div class="fw-feature-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                </div>
+                                <div>
+                                    <h4>Audit-Ready Records</h4>
+                                    <p>Every action is logged. Deactivate workers without losing history. Your data is always intact and fully auditable.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Creation Process -->
+                <div class="flipwise-process-section">
+                    <h3 class="flipwise-process-heading">How It Was Built</h3>
+                    <div class="flipwise-process-steps">
+                        <div class="fw-process-step">
+                            <div class="fw-process-number">01</div>
+                            <h4>Problem Discovery</h4>
+                            <p>Identified a real pain point: real estate investors managing flips with messy spreadsheets and no centralized system for tracking expenses, labor, and receipts across multiple properties.</p>
+                        </div>
+                        <div class="fw-process-connector"></div>
+                        <div class="fw-process-step">
+                            <div class="fw-process-number">02</div>
+                            <h4>Design & Architecture</h4>
+                            <p>Designed the full UX flow from scratch — property onboarding, worker invitation, expense logging, and reporting. Prioritized simplicity: up and running in minutes, no setup headaches.</p>
+                        </div>
+                        <div class="fw-process-connector"></div>
+                        <div class="fw-process-step">
+                            <div class="fw-process-number">03</div>
+                            <h4>Development & AI Integration</h4>
+                            <p>Built the full-stack platform with React frontend, Node.js backend, and PostgreSQL database. Integrated AI receipt scanning via LLM API for automatic data extraction from photos and PDFs.</p>
+                        </div>
+                        <div class="fw-process-connector"></div>
+                        <div class="fw-process-step">
+                            <div class="fw-process-number">04</div>
+                            <h4>Launch & Iteration</h4>
+                            <p>Launched with a free tier and Pro plan ($97/mo). Implemented PWA support for mobile home screen installation. Continuously iterating based on user feedback from active investors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="flipwise-tech-section">
+                    <h3 class="flipwise-tech-heading">Technology Stack</h3>
+                    <div class="flipwise-tech-grid">
+                        <div class="fw-tech-group">
+                            <span class="fw-tech-group-label">Frontend</span>
+                            <div class="fw-tech-tags">
+                                <span class="fw-tech-tag">React</span>
+                                <span class="fw-tech-tag">TypeScript</span>
+                                <span class="fw-tech-tag">Tailwind CSS</span>
+                                <span class="fw-tech-tag">PWA</span>
+                            </div>
+                        </div>
+                        <div class="fw-tech-group">
+                            <span class="fw-tech-group-label">Backend</span>
+                            <div class="fw-tech-tags">
+                                <span class="fw-tech-tag">Node.js</span>
+                                <span class="fw-tech-tag">Express</span>
+                                <span class="fw-tech-tag">REST API</span>
+                            </div>
+                        </div>
+                        <div class="fw-tech-group">
+                            <span class="fw-tech-group-label">Database & Auth</span>
+                            <div class="fw-tech-tags">
+                                <span class="fw-tech-tag">PostgreSQL</span>
+                                <span class="fw-tech-tag">Supabase</span>
+                                <span class="fw-tech-tag">JWT Auth</span>
+                            </div>
+                        </div>
+                        <div class="fw-tech-group">
+                            <span class="fw-tech-group-label">AI & Infra</span>
+                            <div class="fw-tech-tags">
+                                <span class="fw-tech-tag">AI Receipt OCR</span>
+                                <span class="fw-tech-tag">LLM API</span>
+                                <span class="fw-tech-tag">Vercel</span>
+                                <span class="fw-tech-tag">CSV Export</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- PROJECTS GRID -->
+        <!-- =============================================
+             OTHER PROJECTS GRID
+             ============================================= -->
         <section class="projects-grid-section">
             <div class="container">
+                <div class="section-header-row">
+                    <h2 class="section-heading">More Projects</h2>
+                </div>
                 <div class="projects-grid">
+
+                    <!-- Project: RRL Group LLC -->
+                    <div class="grid-project-card" id="rrlgroup" data-category="webapp">
+                        <div class="card-image-container">
+                            <img src="assets/images/project-rrlgroup.jpeg" alt="RRL Group LLC Website">
+                            <span class="card-category-badge">Business Website</span>
+                        </div>
+                        <div class="card-content">
+                            <span class="project-category">Real Estate</span>
+                            <h3>RRL Group LLC</h3>
+                            <p>Full business website for a real estate investment company specializing in luxury property renovations. Features a before/after transformation slider, bilingual support (EN/PT), portfolio gallery, and investor contact flow.</p>
+                            <div class="project-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-label">Properties:</span>
+                                    <span class="highlight-value">10+</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-label">Languages:</span>
+                                    <span class="highlight-value">EN / PT</span>
+                                </div>
+                            </div>
+                            <div class="project-tech-mini">
+                                <span>React</span>
+                                <span>Bilingual</span>
+                                <span>Admin Panel</span>
+                                <span>Before/After Slider</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://rrlgroupllc.com" target="_blank" rel="noopener" class="cta-principal">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: CleanQuote Pro -->
+                    <div class="grid-project-card" id="cleanquote" data-category="webapp">
+                        <div class="card-image-container">
+                            <img src="assets/images/project-cleanquote.png" alt="CleanQuote Pro Interface">
+                            <span class="card-category-badge">Business Tool</span>
+                        </div>
+                        <div class="card-content">
+                            <span class="project-category">Web Application</span>
+                            <h3>CleanQuote Pro</h3>
+                            <p>Professional quotation system for cleaning businesses. Pre-built service templates, automatic cost calculations, and a clean multi-step wizard that reduces quote creation from 15+ minutes to under 3 minutes.</p>
+                            <div class="project-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-label">Time Saved:</span>
+                                    <span class="highlight-value">80%</span>
+                                </div>
+                            </div>
+                            <div class="project-tech-mini">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://clean-quote-pro.netlify.app" target="_blank" rel="noopener" class="cta-principal">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Project: Seja Um Agente FIFA -->
                     <div class="grid-project-card" id="agentefifa" data-category="landing">
                         <div class="card-image-container">
                             <img src="assets/images/project-agentefifa.png" alt="Seja Um Agente FIFA Landing Page">
+                            <span class="card-category-badge">Landing Page</span>
                         </div>
                         <div class="card-content">
                             <span class="project-category">Landing Page</span>
                             <h3>Seja Um Agente FIFA</h3>
-                            <p>High-converting landing page for a FIFA Agent certification course. Features an interactive 
-                            commission calculator, testimonials carousel, FAQ section, and integrated enrollment form. 
-                            Achieved 85-90% approval rate with 40+ students.</p>
+                            <p>High-converting landing page for a FIFA Agent certification course. Features an interactive commission calculator, testimonials carousel, FAQ section, and integrated enrollment form.</p>
                             <div class="project-highlights">
                                 <div class="highlight-item">
                                     <span class="highlight-label">Students:</span>
@@ -153,7 +398,7 @@
                                 </div>
                                 <div class="highlight-item">
                                     <span class="highlight-label">Approval Rate:</span>
-                                    <span class="highlight-value">85-90%</span>
+                                    <span class="highlight-value">85–90%</span>
                                 </div>
                             </div>
                             <div class="project-tech-mini">
@@ -162,7 +407,7 @@
                                 <span>JavaScript</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://sejaumagentefifa.com.br" target="_blank" class="cta-principal">Visit Site</a>
+                                <a href="https://sejaumagentefifa.com.br" target="_blank" rel="noopener" class="cta-principal">Visit Site</a>
                             </div>
                         </div>
                     </div>
@@ -171,13 +416,12 @@
                     <div class="grid-project-card" id="testeqi" data-category="webapp">
                         <div class="card-image-container">
                             <img src="assets/images/project-testeqi.png" alt="Teste de QI Online Application">
+                            <span class="card-category-badge">Web App</span>
                         </div>
                         <div class="card-content">
                             <span class="project-category">Web Application</span>
                             <h3>Teste de QI Online</h3>
-                            <p>Interactive IQ test web application with 120 randomized questions, 30-minute timer, and 
-                            IQ estimation algorithm. Features bilingual support (PT/EN), dark/light mode toggle, and 
-                            clean educational interface.</p>
+                            <p>Interactive IQ test web application with 120 randomized questions, a 30-minute timer, and an IQ estimation algorithm. Features bilingual support (PT/EN) and dark/light mode toggle.</p>
                             <div class="project-highlights">
                                 <div class="highlight-item">
                                     <span class="highlight-label">Questions:</span>
@@ -194,7 +438,7 @@
                                 <span>Responsive</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://testeseuqi.netlify.app" target="_blank" class="cta-principal">Try Test</a>
+                                <a href="https://testeseuqi.netlify.app" target="_blank" rel="noopener" class="cta-principal">Try Test</a>
                             </div>
                         </div>
                     </div>
@@ -203,20 +447,19 @@
                     <div class="grid-project-card" id="racquetfinder" data-category="landing">
                         <div class="card-image-container">
                             <img src="assets/images/project-racquetfinder.png" alt="Racquet Finder Application">
+                            <span class="card-category-badge">Interactive Tool</span>
                         </div>
                         <div class="card-content">
                             <span class="project-category">Interactive Tool</span>
                             <h3>Racquet Finder</h3>
-                            <p>An interactive platform for tennis players to find the ideal racquet (or string) based on their 
-                            playing style, skill level, and physical characteristics. Features intelligent filtering and 
-                            personalized recommendations.</p>
+                            <p>An interactive platform for tennis players to find the ideal racquet based on playing style, skill level, and physical characteristics. Features a smart recommendation engine.</p>
                             <div class="project-tech-mini">
                                 <span>HTML</span>
                                 <span>CSS</span>
                                 <span>JavaScript</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://raquetesearch.com" target="_blank" class="cta-principal">Live Demo</a>
+                                <a href="https://raquetesearch.com" target="_blank" rel="noopener" class="cta-principal">Live Demo</a>
                             </div>
                         </div>
                     </div>
@@ -225,12 +468,12 @@
                     <div class="grid-project-card" id="timecash" data-category="webapp">
                         <div class="card-image-container">
                             <img src="assets/images/project-timecash.png" alt="TimeCash Application Screenshot">
+                            <span class="card-category-badge">Web App</span>
                         </div>
                         <div class="card-content">
                             <span class="project-category">Web Application</span>
                             <h3>TimeCash</h3>
-                            <p>A real-world utility built to solve a personal challenge: managing weekly payments for a
-                                team. Cut admin time by over 85% with automated calculations and exportable receipts.</p>
+                            <p>A real-world utility for managing weekly team payments. Automated calculations and exportable receipts cut admin time by over 85%, solving a genuine operational challenge.</p>
                             <div class="project-highlights">
                                 <div class="highlight-item">
                                     <span class="highlight-label">Time Saved:</span>
@@ -243,8 +486,8 @@
                                 <span>Export</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://timecash.netlify.app" target="_blank" class="cta-principal">Live Demo</a>
-                                <a href="https://github.com/drigorleite" target="_blank" class="btn-secondary">GitHub</a>
+                                <a href="https://timecash.netlify.app" target="_blank" rel="noopener" class="cta-principal">Live Demo</a>
+                                <a href="https://github.com/drigorleite" target="_blank" rel="noopener" class="btn-secondary">GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -253,19 +496,19 @@
                     <div class="grid-project-card" id="ranking" data-category="webapp">
                         <div class="card-image-container">
                             <img src="assets/images/project-ranking.png" alt="Tennis Ranking Project">
+                            <span class="card-category-badge">Web App</span>
                         </div>
                         <div class="card-content">
                             <span class="project-category">Web Application</span>
                             <h3>Tennis Ranking Project</h3>
-                            <p>A web app that helps tennis clubs improve their ranking administration and visualization. 
-                            Features database integration, admin panel for match management, and live ranking updates.</p>
+                            <p>A web app that helps tennis clubs improve ranking administration and visualization. Features Firebase database integration, admin panel for match management, and live ranking updates.</p>
                             <div class="project-tech-mini">
                                 <span>Firebase</span>
                                 <span>JavaScript</span>
                                 <span>Database</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://tennis-ranking-project.web.app/#ranking" target="_blank"
+                                <a href="https://tennis-ranking-project.web.app/#ranking" target="_blank" rel="noopener"
                                     class="cta-principal">Live Demo</a>
                             </div>
                         </div>
@@ -275,19 +518,19 @@
                     <div class="grid-project-card" id="unitconversor" data-category="tool">
                         <div class="card-image-container">
                             <img src="assets/images/project-unit-conversor.png" alt="Unit Conversor Screenshot">
+                            <span class="card-category-badge">Tool</span>
                         </div>
                         <div class="card-content">
                             <span class="project-category">Tool</span>
                             <h3>Unit Conversor</h3>
-                            <p>A mobile-first project focused on UI and UX. Clean interface for converting between 
-                            different units of measurement with instant results.</p>
+                            <p>A mobile-first project focused on UI and UX excellence. Clean, intuitive interface for converting between different units of measurement with instant results.</p>
                             <div class="project-tech-mini">
                                 <span>Mobile-First</span>
                                 <span>JavaScript</span>
                                 <span>UI/UX</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://unitconversorrl.netlify.app" target="_blank" class="cta-principal">Live Demo</a>
+                                <a href="https://unitconversorrl.netlify.app" target="_blank" rel="noopener" class="cta-principal">Live Demo</a>
                             </div>
                         </div>
                     </div>
@@ -344,10 +587,8 @@
         </div>
     </footer>
 
-
     <script src="/assets/js/script.js"></script>
     <script src="/assets/js/projects-filter.js"></script>
 </body>
-
 
 </html>
